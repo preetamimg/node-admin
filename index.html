@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="http://206.189.129.134:4003/vendor/global/global.min.js"></script>
+  <script src="http://206.189.129.134:4003/vendor/toastr/js/toastr.min.js"></script>
+  <script src="http://206.189.129.134:4003/js/plugins-init/toastr-init.js"></script>
+  <script src="http://206.189.129.134:4003/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="http://206.189.129.134:4003/js/custom.js"></script>
+  <script src="http://206.189.129.134:4003/js/deznav-init.js"></script>
+  <script src="http://206.189.129.134:4003/js/demo.js"></script>
+  <script src="http://206.189.129.134:4003/js/styleSwitcher.js"></script>
+  <script src=""></script>
+  <script src=""></script>
+
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/swiper/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/toastr/css/toastr.min.css">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/datatables/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/jvmap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
+  
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+
+</head>
+<body data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_4" data-headerbg="color_4" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="ltr" data-primary="color_1" data-secondary="color_1">
+  <div class="header">
+    <div class="header-content">
+        <nav class="navbar navbar-expand">
+            <div class="collapse navbar-collapse justify-content-between">
+                <ul class="navbar-nav header-right" style="margin-left: auto;">
+                    <li class="nav-item align-items-center header-border"><a href="/admin/logout/" class="btn btn-primary btn-sm">Logout</a></li>	
+                    <li class="nav-item ps-3">
+                        <div class="dropdown header-profile2">
+                            <a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="header-info2 d-flex align-items-center">
+                                    <div class="header-media">
+                                        <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1689675958~exp=1689676558~hmac=f49889901bd73c06b5308c93161fd1a8037c635e948633e779c9046f9542cd0f" alt="">
+                                    </div>
+                                    <div class="header-info">
+                                        <h6>admin admin</h6>
+                                        <p>admin@gmail.com</p>
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <div class="card border-0 mb-0">
+                                    <div class="card-header py-2">
+                                        <div class="products">
+                                            <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1689675958~exp=1689676558~hmac=f49889901bd73c06b5308c93161fd1a8037c635e948633e779c9046f9542cd0f" class="avatar avatar-md" alt="">
+                                            <div>
+                                                <h6>admin admin</h6>
+                                                	
+                                            </div>	
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-0 py-2">
+                                        <a href="/admin/adminProfile" class="dropdown-item ai-icon ">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 15.3462C8.11714 15.3462 4.81429 15.931 4.81429 18.2729C4.81429 20.6148 8.09619 21.2205 11.9848 21.2205C15.8524 21.2205 19.1543 20.6348 19.1543 18.2938C19.1543 15.9529 15.8733 15.3462 11.9848 15.3462Z" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9848 12.0059C14.5229 12.0059 16.58 9.94779 16.58 7.40969C16.58 4.8716 14.5229 2.81445 11.9848 2.81445C9.44667 2.81445 7.38857 4.8716 7.38857 7.40969C7.38 9.93922 9.42381 11.9973 11.9524 12.0059H11.9848Z" stroke="var(--primary)" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+
+                                            <span class="ms-2">Profile </span>
+                                        </a>
+                                       
+                                       
+                                      
+                                    </div>
+                                    <div class="card-footer px-0 py-2">
+                                        
+                                        <a href="/admin/logout" class="dropdown-item ai-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                            <span class="ms-2">Logout </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="deznav">
+  <div class="deznav-scroll mm-active">
+    <ul class="metismenu mm-show" id="menu">
+      
+      <li> <a href="/admin/home/" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/dashboard.svg">
+
+        </div>	
+        <span class="nav-text">Dashboard</span>
+        </a>
+      </li>
+
+      <li class="mm-active"><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/user.svg">
+        </div>	
+        <span class="nav-text">User Manager</span>
+        </a>
+        <ul aria-expanded="false" class="mm-collapse mm-show left" style="">
+          <li class="mm-active"><a href="/admin/view-users-page-list" class="mm-active">View All Registered Users</a></li>
+          <li><a href="/admin/userswallet">View Wallet Report</a></li>
+          <li><a href="/admin/wallet-list">Admin Wallet</a></li>
+          <!-- <li><a href="/admin/view-wallet-transaction">View Wallet Transaction</a></li> -->
+          <li><a href="/admin/withdraw_amount">View All Withdrawal Account Requests</a></li>
+          <!-- <li><a href="/admin/view-live-rewards">User Live Reward</a></li> -->
+          <!-- <li><a href="/admin/view-wallet-request">View WalletRequest</a></li> -->
+          <!-- <li><a href="/admin/view-bonus-page">View Bonus</a></li> -->
+          <!-- <li><a href="/admin/view-user-bets">View user Bets</a></li>
+          <li><a href="/admin/view-casino-bets">View casino Bets</a></li> -->
+        </ul>
+      </li>
+
+      <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/subadmin.svg">
+
+        </div>	
+        <span class="nav-text">SubAdmin</span>
+        </a>
+        <ul aria-expanded="false" class="mm-collapse left" style="">
+          <li><a href="/admin/subadmin-list">View SubAdmin</a></li>
+          <li><a href="/admin/view-role">View Role</a></li>
+        </ul>
+      </li>
+
+      
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Currency</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-currency">View</a></li>
+        </ul>
+         <ul aria-expanded="false">
+          <li><a href="/admin/add-currency-page">Add</a></li>
+        </ul>
+      </li> -->
+      
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Games</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-games">View Games</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/crypto.svg" >
+        </div>	
+        <span class="nav-text">Crypto</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-crypto">View</a></li>
+          <li><a href="/admin/view-network-list">View Network List</a></li>
+          <li><a href="/admin/view-deposit-data">View Deposit Address</a></li>
+
+
+        </ul>
+        <ul aria-expanded="false">
+          <li><a href="/admin/add-crypto-page">Add</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/partner.svg" >
+
+        </div>	
+        <span class="nav-text">Partners</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-partners-data">View</a></li>
+        </ul>
+      </li> -->
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Damble Wheel</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-damble-wheel-data">View</a></li>
+        </ul>
+      </li> -->
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/casino.svg">
+        </div>	
+        <span class="nav-text">Casino Categories</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-casino-games-cat">View</a></li>
+          <li><a href="/admin/view-sports-book-category">Sports Book Categroy</a></li>
+          <li><a href="/admin/view-providers-page">Providers</a></li>
+        </ul>
+      </li> -->
+
+      
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/email.svg">
+
+        </div>	
+        <span class="nav-text">Email Notification</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/sent-mail-page">Sent Notification</a></li>
+        </ul>
+      </li> -->
+
+
+      <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>	
+        <span class="nav-text">CMS Manager</span>
+        </a>
+        <ul aria-expanded="false" class="mm-collapse left" style="">
+          <li><a href="/admin/add-privacy-policy">Privacy Policy</a></li>
+        </ul>
+        <ul aria-expanded="false" class="mm-collapse">
+          <li><a href="/admin/add-how-to-play">How To Play</a></li>
+        </ul>
+        <ul aria-expanded="false" class="mm-collapse">
+          <li><a href="/admin/add-about-us">About Us</a></li>
+        </ul>
+        <ul aria-expanded="false" class="mm-collapse">
+          <li><a href="/admin/add-terms-and-condition">Terms &amp; Condition</a></li>
+        </ul>
+        <!-- <ul aria-expanded="false">
+          <li><a href="/admin/view-partners-data">View Partners Data</a></li>
+
+        </ul> -->
+
+      </li>
+
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Live Rewards</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-live-rewards">View</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Influencer Manager</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/influencer-list">View</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Commission Manager</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-commission-data">View</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Affiliate Manager</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-affiliate-data">View</a></li>
+          <li><a href="/admin/view-commission-data">Commison Manager</a></li>
+
+        </ul>
+      </li>
+
+      <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/partner.svg" >
+
+        </div>	
+        <span class="nav-text">News Manager</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-news-data">View News Data</a></li>
+          <li><a href="/admin/view-newsCategory-data">View News Category</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/partner.svg" >
+
+        </div>	
+        <span class="nav-text">Quest Hub</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-questhub-data">View</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <img src="/icons/partner.svg" >
+
+        </div>	
+        <span class="nav-text">News Categories</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-newsCategory-data">View</a></li>
+        </ul>
+      </li> -->
+
+      <!-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">General Tabs</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-general-tab">View General</a></li>
+          <li><a href="/admin/view-questhub-data">View Quest Hub</a></li>
+          <li><a href="/admin/sent-mail-page">Sent Notification</a></li>
+          <li><a href="/admin/view-damble-wheel-data">View Damble Wheel</a></li>
+        </ul>
+      </li>
+      <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Promotion</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/view-promotion-page">View</a></li>
+        </ul>
+      </li>
+      <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+        <div class="menu-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5346 2.55658H7.1072C4.28845 2.55658 2.52112 4.55216 2.52112 7.37733V14.9985C2.52112 17.8237 4.2802 19.8192 7.1072 19.8192H15.1959C18.0238 19.8192 19.7829 17.8237 19.7829 14.9985V11.3062" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09214 10.0108L14.9424 3.16057C15.7958 2.30807 17.1791 2.30807 18.0325 3.16057L19.1481 4.27615C20.0015 5.12957 20.0015 6.51374 19.1481 7.36624L12.2648 14.2495C11.8917 14.6226 11.3857 14.8325 10.8577 14.8325H7.42389L7.51006 11.3675C7.52289 10.8578 7.73097 10.372 8.09214 10.0108Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.9014 4.21895L18.0869 8.40445" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>	
+        <span class="nav-text">Banner</span>
+        </a>
+        <ul aria-expanded="false">
+          <li><a href="/admin/banner">View</a></li>
+        </ul>
+      </li> -->
+    </ul>
+  </div>
+</div>
+  <div class="content-body"></div>
+</body>
+
+
+
+
+</html>
