@@ -1,0 +1,134 @@
+.content-body{
+    & .mainOffcanvas{
+        width: 500px;
+        & .offcanvasHeader{
+            & .offcanvasTitle{
+                font-size: 15px;
+                font-weight: 600;
+                color: black;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+        }
+        & .MynavOne{
+            background-color: rgba(105, 105, 105, 0.2);
+            padding: 5px;
+            border-radius: 5px;
+            & .navItemOne{
+                border: none;
+                &.widthFifty{
+                    width: 50%;
+                }
+                
+                & .navLinkOne{
+                    padding: 10px;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    width: 100%;
+                    transition: all .3s ease-in-out;
+                    &.active{
+                        background-color: #0D99FF;
+                        color: white;
+                    }
+                    &:hover{
+                        background-color: #0D99FF;
+                        color: white;
+                    }
+                }
+            }
+        }
+        & .innerTab{
+            margin-top: 15px;
+            & .widththirthythree{
+                width: 33.33%;
+            }
+        }
+        & .profileTabs{
+            margin-top: 15px;
+            & .widthTwentyFive{
+                width: 25%;
+            }
+        }
+        & .tableContent{
+            margin-top: 20px;
+            & .common{
+                // text-align: center;
+                & .Mainheading{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: black;
+                }
+                & .content{
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                & .threeBtnDiv{
+                    justify-content: center;
+                    & .rightIcon{
+                        height: 8px;
+                        width: 12px;
+                        & img{
+                            object-fit: cover;
+                        }
+                    }
+                    & .threebtn{
+                        padding: 8px 8px !important;
+                        line-height: 0 !important;
+                        display: flex !important;
+                        & .text{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Myaccordian{
+        .accordionHeader{
+            padding: 0 !important;
+            border: none !important;
+            top: 65%;
+            right: 5%;
+        }
+        & .accordionButton{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+.accordionCollapse{
+    margin-top: 10px;
+    & .accordionBody{
+    }
+}
+.threeBtnDiv{
+    & .rightIcon{
+        height: 10px;
+        width: 15px;
+        & img{
+            object-fit: cover;
+        }
+    }
+    & .threebtn{
+        padding: 8px 8px !important;
+        line-height: 0 !important;
+        display: flex !important;
+        & .text{
+            font-size: 10px;
+        }
+    }
+}
+
+.threebtnMain{
+    padding: 9px 11px !important;
+    line-height: 0 !important;
+    display: flex !important;
+    & .text{
+        font-size: 10px;
+    }
+}
