@@ -132,3 +132,34 @@
         font-size: 10px;
     }
 }
+.MynavOne{
+    background-color: rgba(105, 105, 105, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    & .navItemOne{
+        border: none;
+        &.widthFifty{
+            width: 50%;
+        }
+        
+        & .navLinkOne{
+            padding: 10px;
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 0;
+            text-transform: uppercase;
+            border-radius: 5px;
+            width: 100%;
+            transition: all .3s ease-in-out;
+            &.active{
+                background-color: #0D99FF;
+                color: white;
+            }
+            &:hover{
+                background-color: #0D99FF;
+                color: white;
+            }
+        }
+    }
+}
