@@ -12,8 +12,15 @@
   <script src="http://206.189.129.134:4003/js/deznav-init.js"></script>
   <script src="http://206.189.129.134:4003/js/demo.js"></script>
   <script src="http://206.189.129.134:4003/js/styleSwitcher.js"></script>
+  <script src="http://206.189.129.134:4003/vendor/datatables/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
   <script src=""></script>
   <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+
 
   <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/swiper/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
@@ -26,9 +33,9 @@
   <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/jvmap/jquery-jvectormap.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="http://206.189.129.134:4003/vendor/datatables/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.16/r-2.2.1/datatables.min.css">
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="">
@@ -436,35 +443,35 @@
     </ul>
   </div>
 </div>
-  <div class="content-body">
-      <div class="row">
+  <div class="content-body mt-4 ">
+      <div class="row mainSection">
         <div class="col-12">
-          <ul class="nav nav-tabs MynavOne mb-0" id="myTab" role="tablist">
+          <ul class="nav nav-tabs MynavOne navtabs  mb-0 " id="myTab" role="tablist">
             <li class="nav-item navItemOne" role="presentation">
-              <button class="nav-link navLink navLinkOne active" id="Betfair-tab" data-bs-toggle="tab" data-bs-target="#Betfair-tab-pane" type="button" role="tab" aria-controls="Betfair-tab-pane" aria-selected="true">Betfair</button>
+              <button class="nav-link  navItemOne navLinkOne active" id="Betfair-tab" data-bs-toggle="tab" data-bs-target="#Betfair-tab-pane" type="button" role="tab" aria-controls="Betfair-tab-pane" aria-selected="true">Betfair</button>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link navLink" id="Casino-tab" data-bs-toggle="tab" data-bs-target="#Casino-tab-pane" type="button" role="tab" aria-controls="Casino-tab-pane" aria-selected="false">Casino</button>
+            <li class="nav-item navItemOne" role="presentation">
+              <button class="nav-link  navLinkOne" id="Casino-tab" data-bs-toggle="tab" data-bs-target="#Casino-tab-pane" type="button" role="tab" aria-controls="Casino-tab-pane" aria-selected="false">Casino</button>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="Betfair-tab-pane" role="tabpanel" aria-labelledby="Betfair-tab" tabindex="0">
               <div class="row">
                 <div class="col-12">
-                  <ul class="nav nav-tabs navTabs mb-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link navLink active" id="Cricket-tab" data-bs-toggle="tab" data-bs-target="#Cricket-tab-pane" type="button" role="tab" aria-controls="Cricket-tab-pane" aria-selected="true"><span class="d-inline-flex ballIcon"><img src="img/Cricket.png" alt="cricket" class="img-fluid w-100 h-100"></span> Cricket</button>
+                  <ul class="nav nav-tabs navtabs  MynavOne mt-3 mb-0" id="myTab" role="tablist">
+                    <li class="nav-item navItemOne" role="presentation">
+                      <button class="nav-link  navLinkOne d-flex align-items-center active" id="Cricket-tab" data-bs-toggle="tab" data-bs-target="#Cricket-tab-pane" type="button" role="tab" aria-controls="Cricket-tab-pane" aria-selected="true"><span class="d-inline-flex ballIcon"><img src="img/Cricket.png" alt="cricket" class="img-fluid w-100 h-100"></span> Cricket</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link navLink" id="tennis-tab" data-bs-toggle="tab" data-bs-target="#tennis-tab-pane" type="button" role="tab" aria-controls="tennis-tab-pane" aria-selected="false"><span class="d-inline-flex ballIcon"><img src="img/Tennis.png" alt="cricket" class="img-fluid w-100 h-100"></span> tennis</button>
+                    <li class="nav-item navItemOne" role="presentation">
+                      <button class="nav-link  navLinkOne d-flex align-items-center" id="tennis-tab" data-bs-toggle="tab" data-bs-target="#tennis-tab-pane" type="button" role="tab" aria-controls="tennis-tab-pane" aria-selected="false"><span class="d-inline-flex ballIcon"><img src="img/Tennis.png" alt="cricket" class="img-fluid w-100 h-100"></span> tennis</button>
                     </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link navLink" id="Soccer-tab" data-bs-toggle="tab" data-bs-target="#Soccer-tab-pane" type="button" role="tab" aria-controls="Soccer-tab-pane" aria-selected="false"><span class="d-inline-flex ballIcon"><img src="img/Soccer.png" alt="cricket" class="img-fluid w-100 h-100"></span> Soccer</button>
+                    <li class="nav-item navItemOne" role="presentation">
+                      <button class="nav-link  navLinkOne d-flex align-items-center" id="Soccer-tab" data-bs-toggle="tab" data-bs-target="#Soccer-tab-pane" type="button" role="tab" aria-controls="Soccer-tab-pane" aria-selected="false"><span class="d-inline-flex ballIcon"><img src="img/Soccer.png" alt="cricket" class="img-fluid w-100 h-100"></span> Soccer</button>
                     </li>
                   </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="Cricket-tab-pane" role="tabpanel" aria-labelledby="Cricket-tab" tabindex="0">
-                      <div class="container-fluid mt-n10">
+                      <div class="container-fluid px-0 mt-n10">
 
                         <div class="row">
                             <div class="col-md-12">
@@ -545,7 +552,7 @@
                                           <button type="button" class="tableButton"><img src="img/check.svg" alt="play" class="img-fluid w-100 h-100"></button>
                                           <button type="button" class="tableButton" style="background-color: #FF9F00;"><img src="img/ballcricket.png" alt="play" class="img-fluid w-100 h-100"></button>
                                           <button type="button" class="tableButton" style="background-color: #FF9F00;"><img src="img/ballcricket.png" alt="play" class="img-fluid w-100 h-100"></button>
-                                          <button type="button" class="tableButton"><img src="img/check.svg" alt="play" class="img-fluid w-100 h-100"></button>
+                                          <button type="button" class="tableButton" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="img/check.svg" alt="play" class="img-fluid w-100 h-100"></button>
                                           <button type="button" class="tableButton">MF</button>
                                           <button type="button" class="tableButton">MM</button>
                                         </div>
@@ -690,7 +697,7 @@
                                   </tbody>
                                 </table>  
                                 
-
+                               
 
                               </div>
 
@@ -711,47 +718,1603 @@
           </div>
         </div>
       </div>
+
+      <!-- offcanvas start  -->
+      <div class="offcanvas offcanvas-end mainOffcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header offcanvasHeader">
+          <div class="offcanvas-title offcanvasTitle" id="offcanvasExampleLabel">
+            Australia vs Nethrlands[icc cricket world cup]
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="nav nav-tabs MynavOne" id="myTab" role="tablist">
+              <li class="nav-item navItemOne widthFifty" role="presentation">
+                <button class="nav-link navLinkOne active" id="Myhome-tab" data-bs-toggle="tab" data-bs-target="#Myhome-tab-pane" type="button" role="tab" aria-controls="Myhome-tab-pane" aria-selected="true">Betfair market</button>
+              </li>
+              <li class="nav-item navItemOne widthFifty" role="presentation">
+                <button class="nav-link navLinkOne" id="Myprofile-tab" data-bs-toggle="tab" data-bs-target="#Myprofile-tab-pane" type="button" role="tab" aria-controls="Myprofile-tab-pane" aria-selected="false">Session fancy</button>
+              </li>
+              
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="Myhome-tab-pane" role="tabpanel" aria-labelledby="Myhome-tab" tabindex="0">
+                
+                <ul class="nav nav-tabs innerTab MynavOne" id="myTab" role="tablist">
+                  <li class="nav-item navItemOne widththirthythree" role="presentation">
+                    <button class="nav-link active navLinkOne" id="Innerhome-tab" data-bs-toggle="tab" data-bs-target="#Innerhome-tab-pane" type="button" role="tab" aria-controls="Innerhome-tab-pane" aria-selected="true">Running</button>
+                  </li>
+                  <li class="nav-item navItemOne widththirthythree" role="presentation">
+                    <button class="nav-link navLinkOne" id="Innerprofile-tab" data-bs-toggle="tab" data-bs-target="#Innerprofile-tab-pane" type="button" role="tab" aria-controls="Innerprofile-tab-pane" aria-selected="false">Completed</button>
+                  </li>
+                  <li class="nav-item navItemOne widththirthythree" role="presentation">
+                    <button class="nav-link navLinkOne" id="Innercontact-tab" data-bs-toggle="tab" data-bs-target="#Innercontact-tab-pane" type="button" role="tab" aria-controls="Innercontact-tab-pane" aria-selected="false">New</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="Innerhome-tab-pane" role="tabpanel" aria-labelledby="Innerhome-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleOne">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseOne" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleOne">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleTwo">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseTwo" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleTwo">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Innerprofile-tab-pane" role="tabpanel" aria-labelledby="Innerprofile-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleThree">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseThree" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleThree">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleFour">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseFour" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleFour">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Innercontact-tab-pane" role="tabpanel" aria-labelledby="Innercontact-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleFive">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseFive" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleFive">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseFour">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExamplesix">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseSix" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExamplesix">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="Myprofile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+
+
+                <ul class="nav nav-tabs profileTabs MynavOne" id="myTab" role="tablist">
+                  <li class="nav-item navItemOne widthTwentyFive" role="presentation">
+                    <button class="nav-link navLinkOne active" id="Profilehome-tab" data-bs-toggle="tab" data-bs-target="#Profilehome-tab-pane" type="button" role="tab" aria-controls="Profilehome-tab-pane" aria-selected="true">Running</button>
+                  </li>
+                  <li class="nav-item navItemOne widthTwentyFive" role="presentation">
+                    <button class="nav-link navLinkOne" id="Profileprofile-tab" data-bs-toggle="tab" data-bs-target="#Profileprofile-tab-pane" type="button" role="tab" aria-controls="Profileprofile-tab-pane" aria-selected="false">Completed</button>
+                  </li>
+                  <li class="nav-item navItemOne widthTwentyFive" role="presentation">
+                    <button class="nav-link navLinkOne" id="Profilecontact-tab" data-bs-toggle="tab" data-bs-target="#Profilecontact-tab-pane" type="button" role="tab" aria-controls="Profilecontact-tab-pane" aria-selected="false">New</button>
+                  </li>
+                  <li class="nav-item navItemOne widthTwentyFive" role="presentation">
+                    <button class="nav-link navLinkOne" id="Profiledisabled-tab" data-bs-toggle="tab" data-bs-target="#Profiledisabled-tab-pane" type="button" role="tab" aria-controls="Profiledisabled-tab-pane" aria-selected="false">Rejected</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="Profilehome-tab-pane" role="tabpanel" aria-labelledby="Profilehome-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleSeven">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseSeven" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleSeven">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleEight">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseEight" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleEight">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Profileprofile-tab-pane" role="tabpanel" aria-labelledby="Profileprofile-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleSeven">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseNine" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleNine">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleTen">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseTen" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleTen">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Profilecontact-tab-pane" role="tabpanel" aria-labelledby="Profilecontact-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleEleven">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseEleven" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleEleven">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleTwelve">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseTwelve" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleTwelve">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="Profiledisabled-tab-pane" role="tabpanel" aria-labelledby="Profiledisabled-tab" tabindex="0">
+                    <div class="tableContent position-relative">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Market Id
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="Mainheading">
+                              Action
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleThirteen">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseThirteen" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleThirteen">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3  align-items-center">
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              Match Odds
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="content">
+                              122,258,78725
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="common">
+                            <div class="threeBtnDiv d-flex gap-1">
+                              <button type="button" class="btn btn-primary threebtn d-flex align-items-end">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                                <div class="text">
+                                  R
+                                </div>
+                              </button>
+                              <button type="button" class="btn btn-danger threebtn">
+                                <div class="rightIcon">
+                                  <img src="./img/rightWhite.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                </div>
+                              </button>
+                              <div class="accordion-header accordionHeader positionabsolute p-0 border-0">
+                                <button class="btn btn-success accordionbutton accordionButton threebtnMain" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                                  <div class="rightIcon">
+                                    <img src="./img/downarrow.svg" alt="Righticon" class="h-100 w-100 img-fluid ">
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+
+                      
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="accordion Myaccordian border-0 p-0 m-0 shadow-none" id="accordionExampleFourteen">
+                          <div class="accordion-item border-0 p-0 m-0 shadow-none">
+                            
+
+
+
+                                <!-- accordian body Start -->
+                                        <div id="collapseFourteen" class="accordion-collapse accordionCollapse collapse" data-bs-parent="#accordionExampleFourteen">
+                                          <div class="accordion-body accordionBody">
+                                            <div class="row align-items-center">
+                                              <div class="col-9">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Search</label>
+                                                  <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                                </div>
+                                              </div>
+                                              <div class="col-3 mt-3">
+                                                <button type="button" class="btn btn-primary">Search</button>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Minimum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="100">
+                                                </div>
+                                              </div>
+                                              <div class="col-6">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="mb-3">
+                                                  <label for="exampleFormControlInput1" class="form-label">Maximum Session Stake</label>
+                                                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="500000">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                <!--accordian body ends -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </div>
 
-<script type="text/javascript">
-                    $(document).ready(function() {
-                        var username = $('#username').val();
-                        var email = $('#email').val();
-                        var userId = $('#userId').val();
-                        var phone = $('#phone').val();
-                        $.fn.dataTable.ext.errMode = 'none';
-                        $('#test').DataTable({
+  <script>
+                $('#test').DataTable({
                             searching: false,
                             language: {
                             zeroRecords: "No records to display",
                             },
-                            ajax: {
-                                url: `/admin/user-list-Data-Table?username=${username}&email=${email}&phone=${phone}&userId=${userId}`,
-                                type: 'post',
-                                dataSrc: 'data',
-                                error: function() {
-                                }
-                            },
-                            "lengthMenu": [
-                                [10, 25, 50, 100, 1000, 10000],
-                                [10, 25, 50, 100, 1000, 10000]
-                            ],
-                            columns: [ { data: "id" },
-                            { data: "username"},
-                            { data: "email" },
-                            { data: "mobile" },
-                            { data: "userBet" },
-                            { data: "casinoBet" },
-                            { data: "refercode" },
-                            { data: "wagedAmount" },
-                            { data: "action" } ]
+                            // ajax: {
+                            //     url: `/admin/user-list-Data-Table?username=${username}&email=${email}&phone=${phone}&userId=${userId}`,
+                            //     type: 'post',
+                            //     dataSrc: 'data',
+                            //     error: function() {
+                            //     }
+                            // },
+                            // "lengthMenu": [
+                            //     [10, 25, 50, 100, 1000, 10000],
+                            //     [10, 25, 50, 100, 1000, 10000]
+                            // ],
+                            // columns: [ { data: "id" },
+                            // { data: "username"},
+                            // { data: "email" },
+                            // { data: "mobile" },
+                            // { data: "userBet" },
+                            // { data: "casinoBet" },
+                            // { data: "refercode" },
+                            // { data: "wagedAmount" },
+                            // { data: "action" } ]
                         })
+  </script>
 
-                    });
-</script>
+
 </body>
 
-
+<script src="http://206.189.129.134:4003/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="http://206.189.129.134:4003/vendor/datatables/js/dataTables.buttons.min.js"></script>
+<script src="http://206.189.129.134:4003/vendor/datatables/js/buttons.html5.min.js"></script>
+<script src="http://206.189.129.134:4003/vendor/datatables/js/jszip.min.js"></script>
+<script src="http://206.189.129.134:4003/js/plugins-init/datatables.init.js"></script>
 
 
 </html>

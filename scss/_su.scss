@@ -136,6 +136,9 @@
     background-color: rgba(105, 105, 105, 0.2);
     padding: 5px;
     border-radius: 5px;
+    &.navtabs{
+        width: fit-content;
+    }
     & .navItemOne{
         border: none;
         &.widthFifty{
@@ -155,6 +158,15 @@
             &.active{
                 background-color: #0D99FF;
                 color: white;
+
+                & .ballIcon{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    & img{
+                        filter: invert(1);
+                    }
+                }
             }
             &:hover{
                 background-color: #0D99FF;

@@ -1,105 +1,104 @@
 .content-body{
-    padding: 10px;
-   
- & .navTabs{
-    margin:22px ;
-    width: fit-content;
-    // border-radius: 5px;
-    // height: 40px;
-    border: none;
-    box-shadow: none;
-    border-radius: 100px;
-    // background-color: #c8cbce;
-    background-color: #e7e7e7;
-    border: 1px solid #e7e7e7;
-    & .navLink{
-        border: none;
-        box-shadow: none;
-        font-size: 16px;
-        color: black;
-        font-size: 14px;
-        padding: 5px 10px;
-        background-color: transparent;
-        height: 100%;
-        // border-radius: 5px;
-        border-radius: 100px;
-        display: flex;
-        align-items: center;
-
-        border: 1px solid #e7e7e7;
-
-        transition: all 0.3s ease-in-out;
-        &:hover{
-            background-color: #0D99FF;
-            border: 1px solid white;
-            color: white;
-        }
-        &.active{
-            background-color: #0D99FF;
-            border: 1px solid white;
-            color: white;
-            & .ballIcon{
-                width: 15px;
-                height: 15px;
-                margin-right: 5px;
-                & img{
-                    filter: invert(1);
-                }
-            }
-        }
-    }
-    & .ballIcon{
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
+    & .mainSection{
+        margin: 10px 20px;
+        & .navTabs{
+           width: fit-content !important;
+           & .navLink{
+               border: none;
+               box-shadow: none;
+               font-size: 16px;
+               color: black;
+               font-size: 14px;
+               padding: 5px 10px;
+               background-color: transparent;
+               height: 100%;
+               // border-radius: 5px;
+               border-radius: 100px;
+               display: flex;
+               align-items: center;
        
-    }
- }
- & .tableSectionNew{
-    & tbody{
-        & tr{
-            & .tableDataTd{
-                padding: 8px 10px;
-                font-size: 15px;
-                font-weight: 400;
-                border-bottom: 0;
-                & .innerSectionTd{
-                    font-size: 15px;
-                    color: white;
-                    font-weight: 400;
-                    background-color: rgb(29, 165, 29);
-                    padding: 5px;
-                    height: 25px;
-                    width: 25px;
-                    border-radius: 3px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  
-                }
-                & .playIcon{
-                    width: 25px;
-                    height: 25x;
-                    border-radius: 50%;
-                    background-color: rgb(29, 165, 29);
-                    padding: 8px;
-                }
-            }
+               border: 1px solid #e7e7e7;
+       
+               transition: all 0.3s ease-in-out;
+               &:hover{
+                   background-color: #0D99FF;
+                   border: 1px solid white;
+                   color: white;
+               }
+               &.active{
+                   background-color: #0D99FF;
+                   border: 1px solid white;
+                   color: white;
+                   & .ballIcon{
+                       width: 15px;
+                       height: 15px;
+                       margin-right: 5px;
+                       & img{
+                           filter: invert(1);
+                       }
+                   }
+               }
+           }
+           & .ballIcon{
+               width: 15px;
+               height: 15px;
+               margin-right: 5px;
+              
+           }
         }
-    }
- }
- & .tableButton{
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgb(29, 165, 29);
-    padding: 5px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: white;
+        & .tableSectionNew{
+           & tbody{
+               & tr{
+                   & .tableDataTd{
+                       padding: 8px 10px;
+                       font-size: 15px;
+                       font-weight: 400;
+                       border-bottom: 0;
+                       & .innerSectionTd{
+                           font-size: 15px;
+                           color: white;
+                           font-weight: 400;
+                           background-color: rgb(29, 165, 29);
+                           padding: 5px;
+                           height: 25px;
+                           width: 25px;
+                           border-radius: 3px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                         
+                       }
+                       & .playIcon{
+                           width: 25px;
+                           height: 25x;
+                           border-radius: 50%;
+                           background-color: rgb(29, 165, 29);
+                           padding: 8px;
+                       }
+                   }
+               }
+           }
+        }
+        & .tableButton{
+           width: 25px;
+           height: 25px;
+           border-radius: 5px;
+           background-color: rgb(29, 165, 29);
+           padding: 5px;
+           border: none;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 12px;
+           color: white;
+       
+        }
+        & .ballIcon{
+           width: 15px;
+           height: 15px;
+           margin-right: 5px;
+       }
 
- }
+    }
+   
 }
